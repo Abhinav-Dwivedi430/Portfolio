@@ -20,7 +20,7 @@ const ServiceCard = ({ index, title, icon }) => {
     card.style.setProperty("--y", `${y}px`);
     card.style.setProperty(
       "background",
-      `radial-gradient(circle at ${x}px ${y}px, rgba(255, 77, 97, 0.3), transparent 80%)`
+      `radial-gradient(circle at ${x}px ${y}px, rgba(255, 72, 72, 0.3), transparent 80%)`
     );
   };
 

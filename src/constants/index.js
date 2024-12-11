@@ -14,11 +14,9 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
   freelancer,
-  tesla,
-  shopify,
+  youtube,
+  infosys,
   carrent,
   jobit,
   tripguide,
@@ -63,110 +61,107 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    proficiency: 80,
   },
   {
     name: "CSS 3",
     icon: css,
+    proficiency: 70,
   },
   {
     name: "JavaScript",
     icon: javascript,
+    proficiency: 60,
   },
   {
     name: "TypeScript",
     icon: typescript,
+    proficiency: 50,
   },
   {
     name: "React JS",
     icon: reactjs,
+    proficiency: 80,
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+    proficiency: 70,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    proficiency: 70,
   },
   {
     name: "Node JS",
     icon: nodejs,
+    proficiency: 50,
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    proficiency: 50,
   },
   {
     name: "Three JS",
     icon: threejs,
+    proficiency: 60,
   },
   {
     name: "git",
     icon: git,
+    proficiency: 85,
   },
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    proficiency: 85,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
+    title: "Web Developer",
+    company_name: "Infosys",
+    icon: infosys,
+    iconBg: "#E6DEDD",
+    date: "Oct 2021 - Present",
+    points: [
+      "Worked extensively on backend and cloud technologies, contributing to system functionality and performance optimization.",
+      "Managed multiple projects as part of a team, fixed frontend bugs, and enhanced client project functionalities.",
+      "Collaborated with clients directly, delivering solutions that earned satisfaction and awards for exceptional performance.",
+      "Gained expertise in tools such as ServiceNow, Mulesoft, Confluence, Jira, Commerce Tool, AWS Lambda, BitBucket, Postman, Quantum Metric, and Okta, while understanding product company workflows and system design.",
+    ],
+  },
+  {
+    title: "Freelance Designer",
     company_name: "Freelancer",
     icon: freelancer,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "January 2021 - December 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed impactful banners, logos, thumbnails, and posters to meet diverse client needs.",
+      "Delivered creative branding solutions that enhanced client visibility and engagement.",
+      "Collaborated with clients to refine designs, ensuring satisfaction and timely project completion.",
+      "Proficient in tools like Photoshop, Illustrator, and Canva for high-quality graphic creation.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Youtube Content Creator & Coordinator",
+    company_name: "Youtube",
+    icon: youtube,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "January 2020 - November 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created engaging gaming montages, custom intros, and visually appealing video edits, boosting content quality and branding.",
+      "Managed YouTube channels by coordinating content strategies, scheduling uploads, and optimizing videos for audience engagement.",
+      "Developed and published original content for my own YouTube channel, enhancing my personal brand and online presence.",
+      "Collaborated with creators to align content with channel themes and platform trends, ensuring consistent audience growth.",
     ],
   },
+  
+  
 ];
 
 const testimonials = [
