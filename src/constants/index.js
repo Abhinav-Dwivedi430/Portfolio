@@ -21,11 +21,11 @@ import {
   jobit,
   tripguide,
   threejs,
-  ln, 
-  gh, 
-  yt, 
-  ig, 
-  fb,
+  //ln, 
+  //gh, 
+  //yt, 
+  //ig, 
+  //fb,
 } from "../assets";
 
 export const navLinks = [
@@ -265,27 +265,27 @@ const projects = [
 const socials = [
   {
     name:"Linkedin",
-    icon: ln,
+    //icon: ln,
     link:"https://www.linkedin.com/in/abhinav-dwivedi-ba4b721b7/",
   },
   {
     name: "Github",
-    icon: gh,
+    //icon: gh,
     link: "https://github.com/Abhinav-Dwivedi430",
   },
   {
     name: "Youtube",
-    icon: yt,
+    //icon: yt,
     link: "https://www.youtube.com/@gamifywave4001",
   },
   {
     name: "Instagram",
-    icon: ig,
+    //icon: ig,
     link: "https://www.instagram.com/abhinav_301/",
   },
   {
     name: "Facebook",
-    icon: fb,
+    //icon: fb,
     link: "https://www.facebook.com/abhinavdwivedi345",
   },
 ];
