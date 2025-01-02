@@ -21,6 +21,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  ln, 
+  gh, 
+  yt, 
+  ig, 
+  fb,
 } from "../assets";
 
 export const navLinks = [
@@ -167,7 +172,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but Abhinav proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -175,7 +180,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Abhinav does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -183,7 +188,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Abhinav optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -257,4 +262,32 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socials = [
+  {
+    name:"Linkedin",
+    icon: ln,
+    link:"https://www.linkedin.com/in/abhinav-dwivedi-ba4b721b7/",
+  },
+  {
+    name: "Github",
+    icon: gh,
+    link: "https://github.com/Abhinav-Dwivedi430",
+  },
+  {
+    name: "Youtube",
+    icon: yt,
+    link: "https://www.youtube.com/@gamifywave4001",
+  },
+  {
+    name: "Instagram",
+    icon: ig,
+    link: "https://www.instagram.com/abhinav_301/",
+  },
+  {
+    name: "Facebook",
+    icon: fb,
+    link: "https://www.facebook.com/abhinavdwivedi345",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, socials};
