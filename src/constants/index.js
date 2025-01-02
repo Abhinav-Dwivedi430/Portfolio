@@ -21,11 +21,6 @@ import {
   jobit,
   tripguide,
   threejs,
-  //ln, 
-  //gh, 
-  //yt, 
-  //ig, 
-  //fb,
 } from "../assets";
 
 export const navLinks = [
@@ -262,32 +257,4 @@ const projects = [
   },
 ];
 
-const socials = [
-  {
-    name:"Linkedin",
-    //icon: ln,
-    link:"https://www.linkedin.com/in/abhinav-dwivedi-ba4b721b7/",
-  },
-  {
-    name: "Github",
-    //icon: gh,
-    link: "https://github.com/Abhinav-Dwivedi430",
-  },
-  {
-    name: "Youtube",
-    //icon: yt,
-    link: "https://www.youtube.com/@gamifywave4001",
-  },
-  {
-    name: "Instagram",
-    //icon: ig,
-    link: "https://www.instagram.com/abhinav_301/",
-  },
-  {
-    name: "Facebook",
-    //icon: fb,
-    link: "https://www.facebook.com/abhinavdwivedi345",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects, socials};
+export { services, technologies, experiences, testimonials, projects};
