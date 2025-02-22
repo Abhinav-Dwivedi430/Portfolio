@@ -1,4 +1,4 @@
-import { EarthCanvas, SquareCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { EarthCanvas, SquareCanvas, SkullModel, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -8,6 +8,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import BackgroundMusic from "./Music";
 
 
 export {
@@ -22,6 +23,7 @@ export {
   CanvasLoader,
   EarthCanvas, 
   SquareCanvas, 
-  ComputersCanvas, 
-  StarsCanvas
+  SkullModel, 
+  StarsCanvas,
+  BackgroundMusic
 };

@@ -10,6 +10,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  BackgroundMusic
 } from "./components";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
     <BrowserRouter>
       {/* Background effect */}
       <StarsCanvas />
+      <BackgroundMusic/>
 
       {/* Main content */}
       <div className="relative z-10">

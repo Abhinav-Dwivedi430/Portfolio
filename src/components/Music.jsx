@@ -1,12 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaPlay, FaPause } from "react-icons/fa"; // Import play/pause icons
+import musicFile from "../assets/bg.mp3"; // Import your music file
 
-const BackgroundMusic = ({ audioSrc, volume = 0.09 }) => {
+const BackgroundMusic = ({ volume = 0.09 }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef(null);
 
     useEffect(() => {
-        // Set the initial volume of the audio
         if (audioRef.current) {
             audioRef.current.volume = volume;
         }
@@ -23,112 +24,43 @@ const BackgroundMusic = ({ audioSrc, volume = 0.09 }) => {
         }
     };
 
-    // Animation variants for sound waves
-    const waveVariants = {
-        initial: { scaleY: 0.5 },
-        animate: {
-            scaleY: [0.5, 1, 0.5], // Bouncing effect
-            transition: {
-                duration: 0.8,
-                repeat: Infinity,
-                ease: 'easeInOut',
-            },
-        },
-    };
-
     return (
-        <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000, cursor: 'pointer' }}>
-            <audio ref={audioRef} src={audioSrc} loop />
-            <div
-                onClick={togglePlay}
-                style={{
-                    width: '50px',
-                    height: '40px',
-                    borderRadius: '50%',
-                    background: isPlaying ? '#ff4848' : '#7777',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    position: 'relative',
-                }}
-            >
-                {/* Sound Waves */}
-                {isPlaying && (
-                    <>
-                        <motion.div
-                            style={{
-                                position: 'absolute',
-                                width: '2px',
-                                height: '20px',
-                                background: '#fff',
-                                left: '15px',
-                            }}
-                            variants={waveVariants}
-                            initial="initial"
-                            animate="animate"
-                            transition={{ delay: 0.2 }}
-                        />
-                        <motion.div
-                            style={{
-                                position: 'absolute',
-                                width: '2px',
-                                height: '20px',
-                                background: '#fff',
-                                left: '19px',
-                            }}
-                            variants={waveVariants}
-                            initial="initial"
-                            animate="animate"
-                            transition={{ delay: 0.4 }}
-                        />
-                        <motion.div
-                            style={{
-                                position: 'absolute',
-                                width: '2px',
-                                height: '20px',
-                                background: '#fff',
-                                left: '23px',
-                            }}
-                            variants={waveVariants}
-                            initial="initial"
-                            animate="animate"
-                            transition={{ delay: 0.6 }}
-                        />
-                        <motion.div
-                            style={{
-                                position: 'absolute',
-                                width: '2px',
-                                height: '20px',
-                                background: '#fff',
-                                left: '27px',
-                            }}
-                            variants={waveVariants}
-                            initial="initial"
-                            animate="animate"
-                            transition={{ delay: 0.8 }}
-                        />
-                        <motion.div
-                            style={{
-                                position: 'absolute',
-                                width: '2px',
-                                height: '20px',
-                                background: '#fff',
-                                left: '31px',
-                            }}
-                            variants={waveVariants}
-                            initial="initial"
-                            animate="animate"
-                            // transition={{ delay: 1.0 }}
-                        />
-                    </>
-                )}
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.2 }} // Hover effect
+            whileTap={{ scale: 0.9 }} // Click effect
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            style={{
+                padding:"0px",
+                margin:"0px",
+                position: "fixed",
+                bottom: "20px",
+                right: "25px",
+                zIndex: 1000,
+                cursor: "pointer",
+                background: isPlaying ? "#ff4848" : "rgba(56, 56, 56, 0.53)",
+                width: "30px",
+                height: "30px",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+            }}
+            onClick={togglePlay}
+        >
+            <audio ref={audioRef} src={musicFile} loop />
 
-                {/* Play/Pause Text */}
-                <span style={{ fontSize: '14px', color: '#fff' }}>
-                    {isPlaying ? '' : '|||||'}
-                </span>
-            </div>
-        </div>
+            <motion.div
+                initial={{ rotate: 0 }}
+                animate={{ rotate: isPlaying ? 360 : 0 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                style={{ color: "white", fontSize: "20px" }}
+            >
+                {isPlaying ? <FaPause /> : <FaPlay />}
+            </motion.div>
+        </motion.div>
     );
 };
 

@@ -29,6 +29,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import ln from "./social/ln.png";
+import gh from "./social/gh.png";
+import yt from "./social/yt.png";  
+import ig from "./social/ig.png";
+import fb from "./social/fb.png";
+
 export {
   logo,
   designer,
@@ -57,4 +63,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  fb,
+  gh,
+  ig,
+  ln,
+  yt,
 };
