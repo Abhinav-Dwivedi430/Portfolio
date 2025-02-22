@@ -1,6 +1,7 @@
 import EarthCanvas from "./Earth";
-import SquareCanvas from "./Skills";
-import ComputersCanvas from "./Computers";
+import CircularRing from "./Skills";
+import SkullModel from "./Model";
 import StarsCanvas from "./Stars";
 
-export { StarsCanvas, EarthCanvas, SquareCanvas, ComputersCanvas };
+
+export { StarsCanvas, EarthCanvas, CircularRing, SkullModel };

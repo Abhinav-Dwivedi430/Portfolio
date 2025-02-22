@@ -33,35 +33,18 @@ const ServiceCard = ({ index, title, icon }) => {
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="relative w-full rounded-[20px] p-[2px] shadow-card"
-        style={{
-          //background: "rgba(255, 255, 255, 0.1)",
-          background: "transparent",
-          backdropFilter: "blur(5px)",
-          WebkitBackdropFilter: "blur(5px)",
-          border: "1px solid rgba(255, 255, 255, 0.2)",
-        }}
+        className="service-card"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         ref={cardRef}
       >
-        <div
-          className="relative rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-          style={{
-            background: "rgba(255, 255, 255, 0.2)",
-            backdropFilter: "blur(15px)",
-            WebkitBackdropFilter: "blur(15px)",
-            border: "1px solid rgba(255, 255, 255, 0.3)",
-          }}
-        >
+        <div className="service-card-inner">
           <img
             src={icon}
             alt="web-development"
-            className="w-16 h-16 object-contain"
+            className="service-card-icon"
           />
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
+          <h3 className="service-card-title">{title}</h3>
         </div>
       </motion.div>
     </Tilt>

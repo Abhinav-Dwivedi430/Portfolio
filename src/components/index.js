@@ -1,4 +1,4 @@
-import { EarthCanvas, SquareCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { EarthCanvas, CircularRing, SkullModel, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -8,6 +8,8 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import BackgroundMusic from "./Music";
+import Resume from './Resume';
 
 
 export {
@@ -18,10 +20,12 @@ export {
   Experience,
   Works,
   Feedbacks,
+  Resume,
   Contact,
   CanvasLoader,
-  EarthCanvas, 
-  SquareCanvas, 
-  ComputersCanvas, 
-  StarsCanvas
+  EarthCanvas,
+  CircularRing, 
+  SkullModel, 
+  StarsCanvas,
+  BackgroundMusic,
 };
