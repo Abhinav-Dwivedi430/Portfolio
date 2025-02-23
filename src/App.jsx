@@ -9,7 +9,9 @@ import {
   Navbar,
   Tech,
   Works,
+  DownloadButton,
   StarsCanvas,
+  BackgroundMusic
 } from "./components";
 
 const App = () => {
@@ -17,6 +19,7 @@ const App = () => {
     <BrowserRouter>
       {/* Background effect */}
       <StarsCanvas />
+      <BackgroundMusic/>
 
       {/* Main content */}
       <div className="relative z-10">
@@ -29,6 +32,7 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
+        <DownloadButton />
         <div className="relative z-10">
           <Contact />
         </div>
