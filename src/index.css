@@ -23,9 +23,10 @@
   overflow: hidden; /* Prevents content from spilling out */
 }
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Glass effect: Blur background */
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Glass-style border */
+  background:rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   overflow: hidden; /* Prevents content from spilling out */
   border-radius: 10px; /* Rounded corners */

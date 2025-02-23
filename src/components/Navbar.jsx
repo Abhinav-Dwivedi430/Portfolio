@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -19,6 +18,18 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflow = "hidden"; // Prevent scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Allow scrolling
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup on unmount
+    };
+  }, [toggle]);
 
   return (
     <nav
@@ -63,7 +74,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
-          {/* Full-Screen Menu */}
+          {/* Full-Screen Mobile Menu */}
           <div
             className={`fixed inset-0 bg-black bg-opacity-50 backdrop-blur-lg z-40 transform ${toggle ? "translate-x-0" : "translate-x-full"
               } transition-transform duration-500 ease-in-out`}
