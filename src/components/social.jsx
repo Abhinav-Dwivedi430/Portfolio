@@ -15,9 +15,7 @@ const SocialMediaLinks = () => {
                 alignItems: 'center',
                 gap: '20px',
                 padding: '10px',
-                background: 'rgba(255, 255, 255, 0.1)', // Optional background for the container
                 borderRadius: '10px 0 0 10px', // Rounded edges for a sleek look
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
                 zIndex: 1000, // Ensures the icons appear above most elements
             }}
         >

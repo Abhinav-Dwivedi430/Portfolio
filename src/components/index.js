@@ -9,6 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import BackgroundMusic from "./Music";
+import DownloadButton from "./Resume";
 
 
 export {
@@ -19,6 +20,7 @@ export {
   Experience,
   Works,
   Feedbacks,
+  DownloadButton,
   Contact,
   CanvasLoader,
   EarthCanvas, 
