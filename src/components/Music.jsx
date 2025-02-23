@@ -4,12 +4,25 @@ import { FaPlay, FaPause } from "react-icons/fa"; // Import play/pause icons
 import musicFile from "../assets/bg.mp3"; // Import your music file
 
 const BackgroundMusic = ({ volume = 0.09 }) => {
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(true); // Default state: Playing
     const audioRef = useRef(null);
 
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.volume = volume;
+
+            // Attempt to play the audio when the component mounts
+            const playAudio = async () => {
+                try {
+                    await audioRef.current.play();
+                    setIsPlaying(true);
+                } catch (error) {
+                    console.warn("Autoplay prevented by browser. User interaction required.");
+                    setIsPlaying(false); // Set to false if autoplay fails
+                }
+            };
+
+            playAudio();
         }
     }, [volume]);
 
@@ -32,8 +45,8 @@ const BackgroundMusic = ({ volume = 0.09 }) => {
             whileTap={{ scale: 0.9 }} // Click effect
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
             style={{
-                padding:"0px",
-                margin:"0px",
+                padding: "0px",
+                margin: "0px",
                 position: "fixed",
                 bottom: "20px",
                 right: "25px",
